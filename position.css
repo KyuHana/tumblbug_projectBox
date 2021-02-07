@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.projectBox {
+  width: 280px;
+  height: 320px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.projectBox__img {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.projectBox__img > img {
+  position: absolute;
+  width: 280px;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.2s;
+}
+
+.projectBox__img > img:hover {
+  transform: scale(1.05);
+}
+
+.projectBox__img > .projectBox__img_icon {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectBox__img > .projectBox__img_icon > i {
+  color: white;
+  font-size: 20px;
+  z-index: 9999;
+}
+
+.projectBox__img > .projectBox__img_icon > i:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 6px;
+  border-radius: 20px;
+}
+
+.projectBox__category {
+  font-size: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.projectBox__category > dd {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.projectBox__category > dd > span > a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.projectBox__category > dd > span > a:hover {
+  text-decoration: underline;
+}
+
+.projectBox__category > dd > span:nth-of-type(2)::before {
+  content: "|";
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.projectBox__category > dt {
+  font-size: 18px;
+}
+
+.projectBox__achieve > span {
+  font-size: 14px;
+  color: red;
+  font-weight: 600;
+}
